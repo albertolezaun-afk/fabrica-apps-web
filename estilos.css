@@ -1,0 +1,95 @@
+/* Generado por generar.mjs. No editar a mano. */
+:root {
+    --canvas: #F4F6F8;
+    --surface: #FFFFFF;
+    --raised: #E9EDF2;
+    --line: #D5DCE4;
+    --ink: #0D1218;
+    --muted: #5E6B7C;
+    --accent: #00A97A;
+    --onAccent: #FFFFFF;
+    --danger: #C6342B;
+  --radio: 14px;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --canvas: #0D0F12;
+    --surface: #151920;
+    --raised: #1D222B;
+    --line: #262D38;
+    --ink: #EDF0F4;
+    --muted: #828D9E;
+    --accent: #00E5A0;
+    --onAccent: #08110D;
+    --danger: #FF6B5E;
+  }
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0 24px 96px;
+  background: var(--canvas);
+  color: var(--ink);
+  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+main { max-width: 680px; margin: 0 auto; }
+
+header { padding: 64px 0 40px; }
+
+h1 { font-size: 40px; line-height: 1.1; letter-spacing: -0.02em; margin: 0 0 12px; }
+h2 { font-size: 24px; line-height: 1.25; letter-spacing: -0.01em; margin: 48px 0 12px; }
+h3 { font-size: 19px; margin: 32px 0 8px; }
+
+p, li { color: var(--ink); }
+.muted { color: var(--muted); }
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.tarjeta {
+  display: block;
+  padding: 24px;
+  margin: 16px 0;
+  border: 1px solid var(--line);
+  border-radius: var(--radio);
+  background: var(--surface);
+  color: inherit;
+  transition: border-color .15s;
+}
+.tarjeta:hover { border-color: var(--accent); text-decoration: none; }
+.tarjeta h3 { margin: 0 0 4px; }
+.tarjeta p { margin: 0; color: var(--muted); font-size: 15px; }
+
+.icono {
+  width: 56px; height: 56px;
+  border-radius: 13px;
+  float: left; margin: 0 16px 0 0;
+}
+
+.aviso {
+  padding: 16px 20px;
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--accent);
+  border-radius: 8px;
+  background: var(--surface);
+  font-size: 15px;
+}
+
+ul { padding-left: 20px; }
+li { margin: 6px 0; }
+
+footer {
+  max-width: 680px;
+  margin: 80px auto 0;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+  font-size: 14px;
+  color: var(--muted);
+}
+footer a { color: var(--muted); text-decoration: underline; }
+
+.volver { display: inline-block; margin-bottom: 32px; font-size: 15px; }
