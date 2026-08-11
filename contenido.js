@@ -66,6 +66,55 @@ const contenido = {
       },
     ],
   },
+  'app-nomina': {
+    /** Una línea. Es lo que se ve en el índice. */
+    tagline: 'Del salario bruto al dinero que llega a tu cuenta cada mes.',
+
+    publicada: true,
+
+    datos: {
+      enElDispositivo: [
+        'Tu salario bruto anual y el número de pagas',
+        'Tu situación familiar: hijos a tu cargo, edad y tipo de contrato',
+        'Los sueldos que comparas',
+      ],
+      analitica: true,
+      compras: true,
+      cuentas: false,
+      publicidad: false,
+    },
+
+    faq: [
+      {
+        p: '¿Por qué mi nómina real no da exactamente esto?',
+        r: 'Porque la app calcula el caso general y tu nómina puede llevar pluses, dietas, horas extra, atrasos o un convenio con cotizaciones especiales. Si la diferencia es de unos euros, es normal. Si es de cientos, revisa que hayas puesto el bruto ANUAL con las pagas extra incluidas: es el error más común.',
+      },
+      {
+        p: '¿Meto el bruto anual o el mensual?',
+        r: 'El anual, con las pagas extra incluidas. Es la cifra que aparece en tu contrato. Si solo conoces el mensual, multiplícalo por el número de pagas que cobras.',
+      },
+      {
+        p: 'Me sale que no me retienen nada de IRPF. ¿Es un error?',
+        r: 'Probablemente no. Con sueldos bajos hay dos motivos para no retener: estar por debajo del límite que fija Hacienda, o que tu mínimo personal y familiar se coma la cuota. Son dos mecanismos distintos y los dos son reales.',
+      },
+      {
+        p: '¿Cambia algo cobrar en 12 o en 14 pagas?',
+        r: 'Al año, nada: cobras lo mismo y te retienen lo mismo. Solo cambia el reparto. Con 14 pagas la mensualidad es menor y las dos extras llegan sin descuento de Seguridad Social, porque ya has cotizado por ellas mes a mes.',
+      },
+      {
+        p: '¿Sirve para autónomos?',
+        r: 'No. Está hecha para el régimen general de la Seguridad Social, es decir, para quien trabaja por cuenta ajena. Los autónomos cotizan por tramos de ingresos y el cálculo es otro.',
+      },
+      {
+        p: 'He pagado y he cambiado de teléfono.',
+        r: 'Abre Ajustes → Restaurar compra. La compra va ligada a tu Apple ID, así que se recupera sin coste.',
+      },
+      {
+        p: '¿Es una suscripción?',
+        r: 'No. Es un pago único. No se renueva, no caduca y no hay nada que cancelar.',
+      },
+    ],
+  },
 };
 
 module.exports = { contenido };
