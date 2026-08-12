@@ -115,6 +115,53 @@ const contenido = {
       },
     ],
   },
+  'app-tallas': {
+    tagline: 'Qué talla pedir en cada marca, y por qué no es la misma.',
+
+    publicada: true,
+
+    datos: {
+      enElDispositivo: [
+        'La marca en la que compras y la talla que gastas',
+        'Las conversiones de calzado que consultas',
+      ],
+      analitica: true,
+      compras: true,
+      cuentas: false,
+      publicidad: false,
+    },
+
+    faq: [
+      {
+        p: '¿De dónde salen las tallas de cada marca?',
+        r: 'De la guía de tallas que publica cada marca en su web, que indica qué medidas corporales en centímetros corresponden a cada talla. La app no inventa equivalencias entre marcas: traduce tu talla pasando por esas medidas, que es lo único que no cambia según la tienda. Cada tabla lleva la fecha en que se comprobó.',
+      },
+      {
+        p: '¿Esta app es de Zara, H&M o alguna otra marca?',
+        r: 'No. No tiene ninguna relación con ellas. Sus nombres aparecen únicamente para indicar la equivalencia de tallas, a partir de datos que cada una publica libremente.',
+      },
+      {
+        p: 'Pedí la talla que decía la app y no me vale.',
+        r: 'Puede pasar: una prenda concreta talla distinta según el corte, el tejido y si lleva elástico. La app parte de la tabla general de la marca, que es una media. Escríbenos con la marca y la prenda y lo revisamos.',
+      },
+      {
+        p: '¿Por qué no hay tallas de Estados Unidos en el calzado?',
+        r: 'Porque las fuentes se contradicen entre sí a partir de la 41 europea, y cada marca americana aplica su propia conversión. Preferimos no darte un número en el que no confiamos. Se añadirá cuando haya una fuente fiable.',
+      },
+      {
+        p: '¿Vais a añadir más marcas?',
+        r: 'Sí, y quien haya comprado la versión completa las tendrá sin pagar otra vez. Si echas en falta alguna, dínoslo: las que más se pidan son las primeras que entran.',
+      },
+      {
+        p: 'He pagado y he cambiado de teléfono.',
+        r: 'Abre Ajustes → Restaurar compra. La compra va ligada a tu Apple ID, así que se recupera sin coste.',
+      },
+      {
+        p: '¿Es una suscripción?',
+        r: 'No. Es un pago único. No se renueva, no caduca y no hay nada que cancelar.',
+      },
+    ],
+  },
 };
 
 module.exports = { contenido };
