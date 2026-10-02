@@ -92,4 +92,12 @@ footer {
 }
 footer a { color: var(--muted); text-decoration: underline; }
 
+#core-contacto {
+  --cc-boton: var(--accent);
+  --cc-boton-texto: var(--canvas);
+  --cc-borde: var(--line);
+  --cc-fondo: var(--surface);
+  --cc-texto: var(--ink);
+}
+
 .volver { display: inline-block; margin-bottom: 32px; font-size: 15px; }

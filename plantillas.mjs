@@ -107,6 +107,14 @@ footer {
 }
 footer a { color: var(--muted); text-decoration: underline; }
 
+#core-contacto {
+  --cc-boton: var(--accent);
+  --cc-boton-texto: var(--canvas);
+  --cc-borde: var(--line);
+  --cc-fondo: var(--surface);
+  --cc-texto: var(--ink);
+}
+
 .volver { display: inline-block; margin-bottom: 32px; font-size: 15px; }
 `;
 }
@@ -199,9 +207,8 @@ export function paginaSoporte({ app, anio }) {
 </header>
 
 <div class="aviso">
-  <p style="margin:0">¿No encuentras lo que buscas? Escríbeme a
-  <a href="mailto:${esc(app.supportEmail)}?subject=${encodeURIComponent(app.storeName)}">${esc(app.supportEmail)}</a>.
-  Contesto yo, no un bot.</p>
+  <p style="margin:0">¿No encuentras lo que buscas? Escríbeme con el formulario
+  de contacto de esta página. Contesto yo, no un bot.</p>
 </div>
 
 <h2>Preguntas frecuentes</h2>
@@ -210,7 +217,12 @@ ${faq}
 
 <h2>Si algo va mal</h2>
 <p>Cuéntame qué esperabas que pasara y qué pasó, y dime tu modelo de iPhone y la
-versión de iOS. Con eso suele bastar para reproducirlo.</p>`,
+versión de iOS. Con eso suele bastar para reproducirlo. Indica también el nombre
+de la app (${esc(app.storeName)}) en tu mensaje.</p>
+
+<h2 id="contacto">Formulario de contacto</h2>
+<div id="core-contacto" data-proyecto="fabrica-de-apps" data-idioma="es" data-privacidad="https://apps.albertolezaun.com/${esc(app.slug)}/privacidad.html"></div>
+<script src="https://core-contacto.albertolezaun.workers.dev/form.js" async></script>`,
   });
 }
 
@@ -279,10 +291,10 @@ identidad.</p>
 </ul>
 
 <h2>Tus derechos</h2>
-<p>Puedes pedirme acceso, rectificación o supresión de cualquier dato escribiendo
-a <a href="mailto:${esc(app.supportEmail)}">${esc(app.supportEmail)}</a>. Como la
+<p>Puedes pedirme acceso, rectificación o supresión de cualquier dato a través
+del <a href="soporte.html#contacto">formulario de contacto</a> de la página de soporte. Como la
 analítica es anónima, en la práctica lo único identificable sería un correo que
-me hayas enviado tú.</p>
+me hayas enviado tú por ese formulario.</p>
 <p>También puedes desactivar la compartición de analítica desde
 Ajustes → Privacidad y seguridad → Análisis y mejoras, en el propio iPhone.</p>
 
@@ -295,6 +307,6 @@ sabiendas.</p>
 importantes los avisaré también en las notas de la versión.</p>
 
 <h2>Responsable</h2>
-<p>Alberto Lezaun · <a href="mailto:${esc(app.supportEmail)}">${esc(app.supportEmail)}</a></p>`,
+<p>Alberto Lezaun · contacto a través del <a href="soporte.html#contacto">formulario de contacto</a> de la página de soporte.</p>`,
   });
 }
